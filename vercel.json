@@ -1,21 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "api/scraper.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/update",
-      "dest": "api/scraper.py"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
-  "buildCommand": "cd api && pip install -r requirements.txt && python scraper.py",
-  "outputDirectory": "public"
+  "buildCommand": "pip install -r api/requirements.txt && python api/scraper.py",
+  "outputDirectory": "public",
+  "installCommand": "pip install --upgrade pip"
 }
