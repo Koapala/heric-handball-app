@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héric Handball - Club de Handball</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>🤾 HÉRIC HANDBALL</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#accueil" class="active">Accueil</a></li>
+                    <li><a href="#equipes">Équipes</a></li>
+                    <li><a href="#matchs">Matchs</a></li>
+                    <li><a href="#classement">Classement</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Section Accueil -->
+        <section id="accueil" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <h2>Bienvenue au club de handball d'Héric</h2>
+                    <p>Suivez toute l'actualité de votre équipe favorite</p>
+                </div>
+
+                <div class="quick-info">
+                    <div class="info-card">
+                        <h3>Prochain Match</h3>
+                        <div id="next-match-preview"></div>
+                    </div>
+                    <div class="info-card">
+                        <h3>Classement Actuel</h3>
+                        <div id="ranking-preview"></div>
+                    </div>
+                    <div class="info-card">
+                        <h3>Dernières Actualités</h3>
+                        <div id="news-preview"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Équipes -->
+        <section id="equipes" class="section">
+            <div class="container">
+                <h2>Nos Équipes</h2>
+                <div class="teams-grid" id="teams-list"></div>
+            </div>
+        </section>
+
+        <!-- Section Matchs -->
+        <section id="matchs" class="section">
+            <div class="container">
+                <h2>Prochains Matchs</h2>
+                <div id="matches-list" class="matches-container"></div>
+            </div>
+        </section>
+
+        <!-- Section Classement -->
+        <section id="classement" class="section">
+            <div class="container">
+                <h2>Classement</h2>
+                <div class="table-container">
+                    <table id="ranking-table">
+                        <thead>
+                            <tr>
+                                <th>Pos.</th>
+                                <th>Équipe</th>
+                                <th>J</th>
+                                <th>G</th>
+                                <th>N</th>
+                                <th>P</th>
+                                <th>Buts +</th>
+                                <th>Buts -</th>
+                                <th>Diff</th>
+                                <th>Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ranking-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Héric Handball - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

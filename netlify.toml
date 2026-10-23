@@ -1,0 +1,8 @@
+[build]
+  command = "pip3 install -r api/requirements.txt && python3 api/scraper.py"
+  publish = "public"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

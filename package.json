@@ -1,0 +1,8 @@
+{
+  "name": "heric-handball-app",
+  "version": "1.0.0",
+  "description": "Application pour le club de handball d'Héric",
+  "scripts": {
+    "build": "python3 api/scraper.py"
+  }
+}
