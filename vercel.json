@@ -1,5 +1,4 @@
 {
-  "buildCommand": "pip install -r api/requirements.txt && python api/scraper.py",
-  "outputDirectory": "public",
-  "installCommand": "pip install --upgrade pip"
+  "buildCommand": "echo 'Build complete'",
+  "outputDirectory": "public"
 }
